@@ -33,12 +33,14 @@ impl MetaData {
         }
     }
 
-    pub fn get_server_plugins_directory(&self, server: &String) -> String {
-        self.servers.get(server).expect(messages::server_does_not_exist(server).as_str()).to_string() + "/plugins"
+    pub fn get_server_directory(&self, server: &String) -> String {
+        self.servers.get(server)
+            .unwrap_or_else(|| panic!("{}", messages::server_does_not_exist(server).as_str()))
+            .to_string()
     }
 
-    pub fn get_deploy_from_plugins_directory(&self) -> String {
-        self.get_server_plugins_directory(&self.deploy_from)
+    pub fn get_deploy_from_directory(&self) -> String {
+        self.get_server_directory(&self.deploy_from)
     }
 
     pub fn get_scripts_directory(&self) -> String {
@@ -55,5 +57,9 @@ impl MetaData {
 
     pub fn get_waterfall_version(&self) -> String{
         self.waterfall_version.clone()
+    }
+
+    pub fn get_servers(&self) -> Vec<String> {
+        self.servers.keys().cloned().collect()
     }
 }

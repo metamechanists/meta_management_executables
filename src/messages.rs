@@ -46,6 +46,14 @@ pub fn waterfall_failed(error: io::Error) -> String {
     format!("{}{}", "Failed to fetch waterfall: ".bright_red(), error)
 }
 
+pub fn link_failed(error: io::Error) -> String {
+    format!("{}{}", "Failed to link: ".bright_red(), error)
+}
+
+pub fn unlink_failed(error: io::Error) -> String {
+    format!("{}{}", "Failed to unlink: ".bright_red(), error)
+}
+
 pub fn deployed(plugin: &String) -> String {
     format!("{}{}", "Successfully deployed ".bright_green(), plugin.bright_cyan())
 }
@@ -68,4 +76,8 @@ pub fn updated_waterfall() -> String {
 
 pub fn updated_manual(plugin: &String, link: &String) -> String {
     format!("{}{}{}{}", "No update method for ".bright_yellow(), plugin.bright_cyan(), "; manually update it at ".bright_yellow(), link.bright_blue().underline())
+}
+
+pub fn linked_list_item(server: String) -> String {
+    format!("{}{}", "- ".bright_green(), server.bright_cyan())
 }

@@ -8,10 +8,10 @@ use crate::messages;
 #[derive(Debug, Deserialize)]
 #[serde(tag = "type")]
 pub enum PluginData {
-    Internal { servers: Vec<String> },
-    Script { servers: Vec<String> },
-    Manual { servers: Vec<String>, link: String },
-    Spiget { servers: Vec<String>, id: i32 },
+    Internal,
+    Script,
+    Manual { link: String },
+    Spiget { id: i32 },
 }
 
 impl PluginData {
@@ -29,15 +29,6 @@ impl PluginData {
         match from_str(json_string.as_str()) {
             Err(error) => panic!("{}", messages::failed_to_parse_json(error)),
             Ok(plugin_data) => plugin_data,
-        }
-    }
-
-    pub fn get_servers(&self) -> Vec<String> {
-        match self {
-            PluginData::Internal { servers } => servers.clone(),
-            PluginData::Script { servers } => servers.clone(),
-            PluginData::Manual { servers, link: _ } => servers.clone(),
-            PluginData::Spiget { servers, id: _ } => servers.clone(),
         }
     }
 }
