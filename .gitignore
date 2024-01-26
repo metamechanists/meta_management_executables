@@ -1,1 +1,11 @@
 /target
+
+/metadata.json
+/plugin_data.json
+
+/executables
+/scripts
+
+/mm-main-lobby
+/mm-main-survival
+/mm-test-dev
