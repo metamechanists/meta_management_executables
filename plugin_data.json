@@ -1,0 +1,20 @@
+{
+    "MetaRank": {
+        "type": "Internal",
+        "servers": ["ms", "ml"]
+    },
+    "NexEngine": {
+        "type": "Script",
+        "servers": ["td", "ms", "ml"]
+    },
+    "CMI": {
+        "type": "Manual",
+        "servers": ["td", "ms", "ml"],
+        "link": "https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/"
+    },
+    "DiscordSRV": {
+        "type": "Spiget",
+        "servers": ["td", "ms", "ml"],
+        "id": 18494
+    }
+}

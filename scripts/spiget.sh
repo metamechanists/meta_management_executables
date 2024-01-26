@@ -1,0 +1,1 @@
+wget https://api.spiget.org/v2/resources/$1/download -nv -O $2/$3.jar

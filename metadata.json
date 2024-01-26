@@ -1,0 +1,12 @@
+{
+    "paper_version": "1.20.4",
+    "waterfall_version": "1.20",
+    "scripts": "/home/idra/GitHub/meta_management_executables/scripts",
+    "executables": "/home/idra/GitHub/meta_management_executables/executables",
+    "deploy_from": "td",
+    "servers": {
+        "td": "/home/idra/GitHub/meta_management_executables/mm-test-dev",
+        "ms": "/home/idra/GitHub/meta_management_executables/mm-main-survival",
+        "ml": "/home/idra/GitHub/meta_management_executables/mm-main-lobby"
+    }
+}
