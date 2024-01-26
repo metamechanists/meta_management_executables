@@ -1,0 +1,2 @@
+version=`curl -s https://ci.citizensnpcs.co/job/Citizens2/lastSuccessfulBuild/api/json | jq -r '.artifacts[0].fileName'`
+wget https://ci.citizensnpcs.co/job/Citizens2/lastSuccessfulBuild/artifact/dist/target/$version -nv -O $1/Citizens.jar

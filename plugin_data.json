@@ -1,16 +1,170 @@
 {
-    "MetaRank": {
+    "Aircraft": {
         "type": "Internal"
     },
-    "NexEngine": {
+    "AntiPopup": {
+        "type": "Script"
+    },
+    "Aureliumeta": {
+        "type": "Internal"
+    },
+    "AureliumSkills": {
+        "type": "Spiget",
+        "id": 81069
+    },
+    "Citizens": {
         "type": "Script"
     },
     "CMI": {
         "type": "Manual",
         "link": "https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/"
     },
+    "CMILib": {
+        "type": "Spiget",
+        "id": 87610
+    },
+    "CrystamaeHistoria": {
+        "type": "Blob"
+    },
+    "Cultivation": {
+        "type": "Blob"
+    },
+    "DailyRewards": {
+        "type": "Internal"
+    },
+    "DankTech2": {
+        "type": "Blob"
+    },
     "DiscordSRV": {
         "type": "Spiget",
         "id": 18494
+    },
+    "DyedBackpacks": {
+        "type": "Blob"
+    },
+    "DynaTech": {
+        "type": "Blob"
+    },
+    "EcoPower": {
+        "type": "Blob"
+    },
+    "FNAmplifications": {
+        "type": "Blob"
+    },
+    "FastAsyncWorldEdit": {
+        "type": "Script"
+    },
+    "FluffyMachines": {
+        "type": "Blob"
+    },
+    "FoxyMachines": {
+        "type": "Blob"
+    },
+    "Galactifun": {
+        "type": "Manual",
+        "link": "None"
+    },
+    "GilderFix": {
+        "type": "Internal"
+    },
+    "GriefPrevention": {
+        "type": "Manual",
+        "link": "https://dev.bukkit.org/projects/grief-prevention/files"
+    },
+    "InfinityExpansion": {
+        "type": "Internal"
+    },
+    "ItemEdit": {
+        "type": "Spiget",
+        "id": 40993
+    },
+    "LevelledMobs": {
+        "type": "Spiget",
+        "id": 74304
+    },
+    "LuckPerms": {
+        "type": "Spiget",
+        "id": 28140
+    },
+    "MetaArrows": {
+        "type": "Internal"
+    },
+    "MetaBuilding": {
+        "type": "Internal"
+    },
+    "MetaEvents": {
+        "type": "Internal"
+    },
+    "MetaGoals": {
+        "type": "Internal"
+    },
+    "MetaGuide": {
+        "type": "Internal"
+    },
+    "MetaLib": {
+        "type": "Internal"
+    },
+    "MetaMachines": {
+        "type": "Internal"
+    },
+    "MetaRank": {
+        "type": "Internal"
+    },
+    "MetaUtils": {
+        "type": "Internal"
+    },
+    "MiniBlocks": {
+        "type": "Manual",
+        "link": "None"
+    },
+    "Networks": {
+        "type": "Blob"
+    },
+    "Netheopoiesis": {
+        "type": "Blob"
+    },
+    "PlaceholderAPI": {
+        "type": "Spiget",
+        "id": 6245
+    },
+    "ProtocolLib": {
+        "type": "Spiget",
+        "id": 1997
+    },
+    "Quaptics": {
+        "type": "Blob"
+    },
+    "RelicsOfCthonia": {
+        "type": "Blob"
+    },
+    "SFCalc": {
+        "type": "Blob"
+    },
+    "SlimeHUD": {
+        "type": "Manual",
+        "link": "None"
+    },
+    "SpiritsUnchained": {
+        "type": "Blob"
+    },
+    "TranscEndence": {
+        "type": "Manual",
+        "link": "None"
+    },
+    "Slimefun4": {
+        "type": "Blob"
+    },
+    "SlimeTinker": {
+        "type": "Blob"
+    },
+    "SnowGlobes": {
+        "type": "Internal"
+    },
+    "Spark": {
+        "type": "Spiget",
+        "id": 57242
+    },
+    "WorldEditSlimefun": {
+        "type": "Blob"
     }
 }

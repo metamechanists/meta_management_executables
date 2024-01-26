@@ -15,6 +15,7 @@ pub fn update_plugin(plugin_data: &HashMap<String, PluginData>, metadata: &MetaD
     match data {
         PluginData::Internal => (),
         PluginData::Script => update_script(metadata, plugin),
+        PluginData::Blob => update_blob(metadata, plugin),
         PluginData::Manual { link } => update_manual(plugin, link),
         PluginData::Spiget { id } => update_spiget(metadata, plugin, *id),
     }
@@ -51,6 +52,19 @@ fn update_script(metadata: &MetaData, plugin: &String) {
     let script = metadata.get_scripts_directory() + "/" + plugin + ".sh";
     let output = Command::new("sh")
         .arg(script.as_str())
+        .arg(metadata.get_executables_directory())
+        .output();
+    match output {
+        Err(error) => println!("{}", messages::script_failed(&script, error)),
+        Ok(_) => println!("{}", messages::updated_script(plugin)),
+    }
+}
+
+fn update_blob(metadata: &MetaData, plugin: &String) {
+    let script = metadata.get_scripts_directory() + "/blob.sh";
+    let output = Command::new("sh")
+        .arg(script.as_str())
+        .arg(plugin)
         .arg(metadata.get_executables_directory())
         .output();
     match output {

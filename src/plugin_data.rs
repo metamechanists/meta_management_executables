@@ -10,6 +10,7 @@ use crate::messages;
 pub enum PluginData {
     Internal,
     Script,
+    Blob,
     Manual { link: String },
     Spiget { id: i32 },
 }

@@ -1,0 +1,2 @@
+version=`curl -s https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/api/json | jq -r '.artifacts[0].fileName'`
+wget https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/artifacts/$version -nv -O $1/FastAsyncWorldEdit.jar
