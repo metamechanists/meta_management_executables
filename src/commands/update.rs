@@ -70,8 +70,8 @@ fn update_blob(metadata: &MetaData, plugin: &String) {
         .arg(metadata.get_executables_directory())
         .output();
     match output {
-        Err(error) => println!("{}", messages::script_failed(&script, error)),
-        Ok(_) => println!("{}", messages::updated_script(plugin)),
+        Err(error) => println!("{}", messages::blob_failed(&script, error)),
+        Ok(_) => println!("{}", messages::updated_blob(plugin)),
     }
     check_jar_not_empty(metadata, plugin);
 }

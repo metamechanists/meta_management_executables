@@ -38,6 +38,10 @@ pub fn spiget_failed(plugin: &String, error: io::Error) -> String {
     format!("{}{}{}{}", "Failed to spiget ".bright_red(), plugin.bright_cyan(), ": ".bright_red(), error)
 }
 
+pub fn blob_failed(plugin: &String, error: io::Error) -> String {
+    format!("{}{}{}{}", "Failed to blob ".bright_red(), plugin.bright_cyan(), ": ".bright_red(), error)
+}
+
 pub fn paper_failed(error: io::Error) -> String {
     format!("{}{}", "Failed to fetch paper: ".bright_red(), error)
 }
@@ -64,6 +68,10 @@ pub fn deployed(plugin: &String) -> String {
 
 pub fn updated_spiget(plugin: &String) -> String {
     format!("{}{}", "Successfully updated (spiget) ".bright_green(), plugin.bright_cyan())
+}
+
+pub fn updated_blob(plugin: &String) -> String {
+    format!("{}{}", "Successfully updated (blob) ".bright_green(), plugin.bright_cyan())
 }
 
 pub fn updated_script(plugin: &String) -> String {

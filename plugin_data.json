@@ -48,8 +48,8 @@
         "id": 81890
     },
     "CoreProtect": {
-        "type": "Spiget",
-        "id": 8631
+        "type": "Manual",
+        "link": "https://www.patreon.com/posts/89830486"
     },
     "CraftingStore": {
         "type": "Spiget",
@@ -75,7 +75,7 @@
         "type": "Blob"
     },
     "DynaTech": {
-        "type": "Blob"
+        "type": "Script"
     },
     "ExcellentCrates": {
         "type": "Spiget",
