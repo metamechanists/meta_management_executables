@@ -1,4 +1,4 @@
-use std::{collections::HashMap, fs::{self, File}, io::BufReader, path::Path, process::Command};
+use std::{collections::HashMap, fs::{self}, process::Command};
 
 use crate::{messages, metadata::MetaData, plugin_data::PluginData};
 
@@ -16,7 +16,7 @@ pub fn update_plugin(plugin_data: &HashMap<String, PluginData>, metadata: &MetaD
         PluginData::Internal => (),
         PluginData::Script => update_script(metadata, plugin),
         PluginData::Blob => update_blob(metadata, plugin),
-        PluginData::Manual { link } => update_manual(plugin, link),
+        PluginData::Manual { link } => update_manual(metadata, plugin, link),
         PluginData::Spiget { id } => update_spiget(metadata, plugin, *id),
     }
 }
@@ -75,8 +75,9 @@ fn update_blob(metadata: &MetaData, plugin: &String) {
     check_jar_not_empty(metadata, plugin);
 }
 
-fn update_manual(plugin: &String, link: &String) {
+fn update_manual(metadata: &MetaData, plugin: &String, link: &String) {
     println!("{}", messages::updated_manual(plugin, link));
+    check_jar_not_empty(metadata, plugin);
 }
 
 fn update_spiget(metadata: &MetaData, plugin: &String, id: i32) {
