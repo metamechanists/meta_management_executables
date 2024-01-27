@@ -107,18 +107,22 @@ fn check_jar_not_empty(metadata: &MetaData, plugin: &String) {
 
 fn create_backup(metadata: &MetaData) {
     Command::new("mv")
+        .arg(metadata.get_executables_directory() + "_older")
+        .arg(metadata.get_executables_directory() + "_oldest")
+        .output()
+        .unwrap();
+    Command::new("mv")
+        .arg(metadata.get_executables_directory() + "_old")
+        .arg(metadata.get_executables_directory() + "_older")
+        .output()
+        .unwrap();
+    Command::new("mv")
         .arg(metadata.get_executables_directory())
         .arg(metadata.get_executables_directory() + "_old")
         .output()
         .unwrap();
-    Command::new("mv")
-        .arg(metadata.get_executables_directory() + "_old")
-        .arg(metadata.get_executables_directory() + "_older")
-        .output()
-        .unwrap();
-    Command::new("mv")
-        .arg(metadata.get_executables_directory() + "_older")
-        .arg(metadata.get_executables_directory() + "_oldest")
+    Command::new("mkdir")
+        .arg(metadata.get_executables_directory())
         .output()
         .unwrap();
 }
