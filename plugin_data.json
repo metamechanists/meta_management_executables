@@ -198,8 +198,7 @@
         "id": 32536
     },
     "ProtocolLib": {
-        "type": "Spiget",
-        "id": 1997
+        "type": "Script"
     },
     "PvPManager": {
         "type": "Spiget",
