@@ -1,4 +1,4 @@
-use std::{fmt::format, io};
+use std::io;
 
 use colored::Colorize;
 
@@ -60,6 +60,10 @@ pub fn unlink_failed(error: io::Error) -> String {
 
 pub fn jar_empty(plugin: &String) -> String {
     format!("{}{}{}", "Jar file ".bright_red(), plugin, " is empty".bright_red())
+}
+
+pub fn jar_not_found(plugin: &String) -> String {
+    format!("{}{}{}", "Jar file ".bright_red(), plugin, " does not exist".bright_red())
 }
 
 pub fn deployed(plugin: &String) -> String {

@@ -9,6 +9,7 @@ mod link;
 mod list;
 mod unlink;
 mod update;
+mod verify;
 
 pub fn update(plugin_data: &HashMap<String, PluginData>, metadata: &MetaData, plugin: String) {
     match plugin.to_lowercase().as_str() {
@@ -50,3 +51,6 @@ pub fn unlink(metadata: &MetaData, plugin: String, server: String) {
     }
 }
 
+pub fn verify(metadata: &MetaData, plugin_data: &HashMap<String, PluginData>) {
+        verify::verify(metadata, plugin_data)
+}

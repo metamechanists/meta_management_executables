@@ -1,5 +1,5 @@
 use clap::{Parser, Subcommand};
-use commands::{deploy, link, list, unlink, update};
+use commands::{deploy, link, list, unlink, update, verify};
 use metadata::MetaData;
 use plugin_data::PluginData;
 
@@ -26,6 +26,8 @@ enum Commands {
     Link { plugin: String, server: String },
     /// Unlink a plugin from a server. 'paper' and 'waterfall' are valid.
     Unlink { plugin: String, server: String },
+    /// Check that the executables directory contains all required executables (including paper and waterfall)
+    Verify,
 }
 
 fn main() {
@@ -38,5 +40,6 @@ fn main() {
         Commands::List { plugin } => list(&metadata, plugin),
         Commands::Link { plugin, server } => link(&metadata, plugin, server),
         Commands::Unlink { plugin, server } => unlink(&metadata, plugin, server),
+        Commands::Verify => verify(&metadata, &plugin_data),
     }
 }
