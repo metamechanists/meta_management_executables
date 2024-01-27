@@ -141,8 +141,7 @@
         "type": "Blob"
     },
     "SlimeHUD": {
-        "type": "Manual",
-        "link": "None"
+        "type": "Blob"
     },
     "SpiritsUnchained": {
         "type": "Blob"

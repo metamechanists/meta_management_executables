@@ -1,4 +1,4 @@
-use std::{collections::HashMap, process::Command};
+use std::{collections::HashMap, fs::{self, File}, io::BufReader, path::Path, process::Command};
 
 use crate::{messages, metadata::MetaData, plugin_data::PluginData};
 
@@ -58,6 +58,7 @@ fn update_script(metadata: &MetaData, plugin: &String) {
         Err(error) => println!("{}", messages::script_failed(&script, error)),
         Ok(_) => println!("{}", messages::updated_script(plugin)),
     }
+    check_jar_not_empty(metadata, plugin);
 }
 
 fn update_blob(metadata: &MetaData, plugin: &String) {
@@ -71,6 +72,7 @@ fn update_blob(metadata: &MetaData, plugin: &String) {
         Err(error) => println!("{}", messages::script_failed(&script, error)),
         Ok(_) => println!("{}", messages::updated_script(plugin)),
     }
+    check_jar_not_empty(metadata, plugin);
 }
 
 fn update_manual(plugin: &String, link: &String) {
@@ -88,5 +90,17 @@ fn update_spiget(metadata: &MetaData, plugin: &String, id: i32) {
     match output {
         Err(error) => println!("{}", messages::spiget_failed(plugin, error)),
         Ok(_) => println!("{}", messages::updated_spiget(plugin)),
+    }
+    check_jar_not_empty(metadata, plugin);
+}
+
+fn check_jar_not_empty(metadata: &MetaData, plugin: &String) {
+    let url = metadata.get_executables_directory() + "/" + plugin + ".jar";
+    if let Ok(file) = File::open(&url) {
+        let buf_reader = BufReader::new(file);
+        let size = buf_reader.buffer().len();
+        if size == 0 {
+            println!("{}", messages::jar_empty(plugin))
+        }
     }
 }
