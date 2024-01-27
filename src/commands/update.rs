@@ -3,6 +3,7 @@ use std::{collections::HashMap, fs::{self}, process::Command};
 use crate::{messages, metadata::MetaData, plugin_data::PluginData};
 
 pub fn update_all(plugin_data: &HashMap<String, PluginData>, metadata: &MetaData) {
+    create_backup(metadata);
     for data in plugin_data {
         update_plugin(plugin_data, metadata, data.0);
     }
@@ -102,4 +103,22 @@ fn check_jar_not_empty(metadata: &MetaData, plugin: &String) {
             println!("{}", messages::jar_empty(plugin))
         }
     }
+}
+
+fn create_backup(metadata: &MetaData) {
+    Command::new("mv")
+        .arg(metadata.get_executables_directory())
+        .arg(metadata.get_executables_directory() + "_old")
+        .output()
+        .unwrap();
+    Command::new("mv")
+        .arg(metadata.get_executables_directory() + "_old")
+        .arg(metadata.get_executables_directory() + "_older")
+        .output()
+        .unwrap();
+    Command::new("mv")
+        .arg(metadata.get_executables_directory() + "_older")
+        .arg(metadata.get_executables_directory() + "_oldest")
+        .output()
+        .unwrap();
 }
