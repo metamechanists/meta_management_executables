@@ -96,10 +96,8 @@ fn update_spiget(metadata: &MetaData, plugin: &String, id: i32) {
 
 fn check_jar_not_empty(metadata: &MetaData, plugin: &String) {
     let url = metadata.get_executables_directory() + "/" + plugin + ".jar";
-    if let Ok(file) = File::open(&url) {
-        let buf_reader = BufReader::new(file);
-        let size = buf_reader.buffer().len();
-        if size == 0 {
+    if let Ok(file_metadata) = fs::metadata(&url) {
+        if file_metadata.len() == 0 {
             println!("{}", messages::jar_empty(plugin))
         }
     }
