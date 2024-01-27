@@ -1,0 +1,1 @@
+wget https://dev.bukkit.org/projects/worldguard/files/latest -nv -O $1/WorldGuard.jar

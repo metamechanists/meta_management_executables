@@ -5,12 +5,32 @@
     "AntiPopup": {
         "type": "Script"
     },
+    "ArmorStandTools": {
+        "type": "Spiget",
+        "id": 2237
+    },
+    "ArtMap": {
+        "type": "Manual",
+        "link": "https://gitlab.com/BlockStack/ArtMap/-/releases"
+    },
     "Aureliumeta": {
         "type": "Internal"
     },
     "AureliumSkills": {
         "type": "Spiget",
         "id": 81069
+    },
+    "BetonQuest": {
+        "type": "Spiget",
+        "id": 2117
+    },
+    "BKCommonLib": {
+        "type": "Spiget",
+        "id": 39590
+    },
+    "Celeste": {
+        "type": "Spiget",
+        "id": 81862
     },
     "Citizens": {
         "type": "Script"
@@ -23,6 +43,18 @@
         "type": "Spiget",
         "id": 87610
     },
+    "ContainerPassthrough": {
+        "type": "Spiget",
+        "id": 81890
+    },
+    "CoreProtect": {
+        "type": "Spiget",
+        "id": 8631
+    },
+    "CraftingStore": {
+        "type": "Spiget",
+        "id": 31331
+    },
     "CrystamaeHistoria": {
         "type": "Blob"
     },
@@ -33,7 +65,7 @@
         "type": "Internal"
     },
     "DankTech2": {
-        "type": "Blob"
+        "type": "Internal"
     },
     "DiscordSRV": {
         "type": "Spiget",
@@ -44,6 +76,10 @@
     },
     "DynaTech": {
         "type": "Blob"
+    },
+    "ExcellentCrates": {
+        "type": "Spiget",
+        "id": 48732
     },
     "EcoPower": {
         "type": "Blob"
@@ -67,12 +103,30 @@
     "GilderFix": {
         "type": "Internal"
     },
+    "GPFlags": {
+        "type": "Spiget",
+        "id": 55773
+    },
     "GriefPrevention": {
         "type": "Manual",
         "link": "https://dev.bukkit.org/projects/grief-prevention/files"
     },
+    "Harbour": {
+        "type": "Spiget",
+        "id": 60088
+    },
+    "HeadDB": {
+        "type": "Spiget",
+        "id": 84967
+    },
     "InfinityExpansion": {
         "type": "Internal"
+    },
+    "InteractiveChat": {
+        "type": "Script"
+    },
+    "InteractiveChatDiscordSRV": {
+        "type": "Script"
     },
     "ItemEdit": {
         "type": "Spiget",
@@ -95,9 +149,6 @@
     "MetaEvents": {
         "type": "Internal"
     },
-    "MetaGoals": {
-        "type": "Internal"
-    },
     "MetaGuide": {
         "type": "Internal"
     },
@@ -117,25 +168,56 @@
         "type": "Manual",
         "link": "None"
     },
+    "MyWorlds": {
+        "type": "Spiget",
+        "id": 39594
+    },
+    "NerfPhantoms": {
+        "type": "Spiget",
+        "id": 59218
+    },
     "Networks": {
         "type": "Blob"
     },
     "Netheopoiesis": {
         "type": "Blob"
     },
+    "NexEngine": {
+        "type": "Script"
+    },
+    "OtherAnimalTeleport": {
+        "type": "Spiget",
+        "id": 63497
+    },
     "PlaceholderAPI": {
         "type": "Spiget",
         "id": 6245
     },
+    "Plan": {
+        "type": "Spiget",
+        "id": 32536
+    },
     "ProtocolLib": {
         "type": "Spiget",
         "id": 1997
+    },
+    "PvPManager": {
+        "type": "Spiget",
+        "id": 845
     },
     "Quaptics": {
         "type": "Blob"
     },
     "RelicsOfCthonia": {
         "type": "Blob"
+    },
+    "ResourceWorld": {
+        "type": "Spiget",
+        "id": 75994
+    },
+    "RHLeafDecay": {
+        "type": "Spiget",
+        "id": 83581
     },
     "SFCalc": {
         "type": "Blob"
@@ -145,6 +227,10 @@
     },
     "SpiritsUnchained": {
         "type": "Blob"
+    },
+    "Squaremap": {
+        "type": "Manual",
+        "link": "https://github.com/jpenilla/squaremap/releases"
     },
     "TranscEndence": {
         "type": "Manual",
@@ -159,11 +245,42 @@
     "SnowGlobes": {
         "type": "Internal"
     },
+    "StaffPlusPlusBukkit": {
+        "type": "Manual",
+        "link": "https://staffplusplus.org/"
+    },
+    "StaffPlusPlusProxy": {
+        "type": "Manual",
+        "link": "https://staffplusplus.org/"
+    },
     "Spark": {
         "type": "Spiget",
         "id": 57242
     },
+    "Vault": {
+        "type": "Spiget",
+        "id": 34315
+    },
+    "VoidGen": {
+        "type": "Spiget",
+        "id": 25391
+    },
+    "VotingPlugin": {
+        "type": "Spiget",
+        "id": 15358
+    },
     "WorldEditSlimefun": {
         "type": "Blob"
+    },
+    "WorldEditSUI": {
+        "type": "Spiget",
+        "id": 60726
+    },
+    "WorldGuardExtraFlags": {
+        "type": "Spiget",
+        "id": 4823
+    },
+    "WorldGuard": {
+        "type": ""
     }
 }
