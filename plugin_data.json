@@ -281,6 +281,6 @@
         "id": 4823
     },
     "WorldGuard": {
-        "type": ""
+        "type": "Script"
     }
 }
