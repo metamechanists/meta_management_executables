@@ -5,6 +5,8 @@ use serde_json::from_str;
 
 use crate::messages;
 
+const METADATA_PATH: &str = "/home/exec-manager/metadata.json";
+
 #[derive(Deserialize)]
 pub struct MetaData {
     paper_version: String,
@@ -17,14 +19,14 @@ pub struct MetaData {
 
 impl MetaData {
     pub fn load() -> Self {
-        let file = File::open("metadata.json");
+        let file = File::open(METADATA_PATH);
         let Ok(mut file) = file else {
-            panic!("{}", messages::could_not_find_file("metadata.json"));
+            panic!("{}", messages::could_not_find_file(METADATA_PATH));
         };
 
         let mut json_string = String::new();
         if let Err(error) = file.read_to_string(&mut json_string) {
-            panic!("{}", messages::error_reading_file("metadata.json", error));
+            panic!("{}", messages::error_reading_file(METADATA_PATH, error));
         }
 
         match from_str(json_string.as_str()) {
