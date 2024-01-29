@@ -5,6 +5,8 @@
     "executables": "/home/exec-manager/executables",
     "deploy_from": "td",
     "servers": {
-        "td": "/home/mm-test-dev"
+        "tp": "/home/mm-test-proxy",
+        "td": "/home/mm-test-dev",
+        "ta": "/home/mm-test-admin"
     }
 }
