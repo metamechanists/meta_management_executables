@@ -18,11 +18,11 @@ pub fn unlink_plugin(metadata: &MetaData, plugin: String, server: String) {
 }
 
 pub fn unlink_paper(metadata: &MetaData, server: String) {
-    let to = metadata.get_server_directory(&server) + "/Paper.jar";
+    let to = metadata.get_server_directory(&server) + "/paper.jar";
     delete_symlink(to);
 }
 
 pub fn unlink_waterfall(metadata: &MetaData, server: String) {
-    let to = metadata.get_server_directory(&server) + "/Waterfall.jar";
+    let to = metadata.get_server_directory(&server) + "/waterfall.jar";
     delete_symlink(to);
 }
