@@ -21,13 +21,13 @@ pub fn link_plugin(metadata: &MetaData, plugin: String, server: String) {
 }
 
 pub fn link_paper(metadata: &MetaData, server: String) {
-    let from = metadata.get_executables_directory() + "/Paper.jar";
+    let from = metadata.get_executables_directory() + "/paper.jar";
     let to = metadata.get_server_directory(&server);
     create_symlink(from, to);
 }
 
 pub fn link_waterfall(metadata: &MetaData, server: String) {
-    let from = metadata.get_executables_directory() + "/Waterfall.jar";
+    let from = metadata.get_executables_directory() + "/waterfall.jar";
     let to = metadata.get_server_directory(&server);
     create_symlink(from, to);
 }
