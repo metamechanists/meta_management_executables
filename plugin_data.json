@@ -71,6 +71,10 @@
         "type": "Spiget",
         "id": 18494
     },
+    "DisplayEntityEditor": {
+        "type": "Spiget",
+        "id": 110267
+    },
     "DyedBackpacks": {
         "type": "Blob"
     },
