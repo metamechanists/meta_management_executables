@@ -100,6 +100,9 @@
     "FoxyMachines": {
         "type": "Blob"
     },
+    "Furnished": {
+        "type": "Internal"
+    },
     "Galactifun": {
         "type": "Manual",
         "link": "None"
