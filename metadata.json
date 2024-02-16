@@ -7,7 +7,6 @@
     "servers": {
         "tp": "/home/mm-test-proxy",
         "td": "/home/mm-test-dev",
-        "ta": "/home/mm-test-admin",
         "mp": "/home/mm-main-proxy",
         "ms": "/home/mm-main-survival",
         "ml": "/home/mm-main-lobby",
