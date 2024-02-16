@@ -109,6 +109,10 @@
     "EcoPower": {
         "type": "Blob"
     },
+    "EvenMoreFish": {
+        "type": "Spiget",
+        "id": 91310
+    },
     "FNAmplifications": {
         "type": "Blob"
     },
