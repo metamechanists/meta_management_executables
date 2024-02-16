@@ -5,6 +5,7 @@ use crate::{metadata::MetaData, plugin_data::PluginData};
 use self::{deploy::{deploy_all, deploy_plugin}, link::{link_paper, link_plugin, link_waterfall}, list::{list_paper, list_plugin, list_waterfall}, unlink::{unlink_paper, unlink_plugin, unlink_waterfall}, update::{update_all, update_paper, update_plugin, update_waterfall}};
 
 mod deploy;
+mod integrity;
 mod link;
 mod list;
 mod unlink;
@@ -53,4 +54,8 @@ pub fn unlink(metadata: &MetaData, plugin: String, server: String) {
 
 pub fn verify(metadata: &MetaData, plugin_data: &HashMap<String, PluginData>) {
         verify::verify(metadata, plugin_data)
+}
+
+pub fn integrity(metadata: &MetaData) {
+    integrity::integrity(metadata);
 }

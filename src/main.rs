@@ -1,5 +1,5 @@
 use clap::{Parser, Subcommand};
-use commands::{deploy, link, list, unlink, update, verify};
+use commands::{deploy, integrity, link, list, unlink, update, verify};
 use metadata::MetaData;
 use plugin_data::PluginData;
 
@@ -28,6 +28,8 @@ enum Commands {
     Unlink { plugin: String, server: String },
     /// Check that the executables directory contains all required executables (including paper and waterfall)
     Verify,
+    /// Check that the symlinks in all servers are valid
+    Integrity,
 }
 
 fn main() {
@@ -41,5 +43,6 @@ fn main() {
         Commands::Link { plugin, server } => link(&metadata, plugin, server),
         Commands::Unlink { plugin, server } => unlink(&metadata, plugin, server),
         Commands::Verify => verify(&metadata, &plugin_data),
+        Commands::Integrity => integrity(&metadata),
     }
 }
