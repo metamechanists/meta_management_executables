@@ -278,6 +278,10 @@
         "type": "Manual",
         "link": "https://staffplusplus.org/"
     },
+    "StaffPlusPlusDiscord": {
+        "type": "Spiget",
+        "link": 83871
+    },
     "StaffPlusPlusProxy": {
         "type": "Manual",
         "link": "https://staffplusplus.org/"
