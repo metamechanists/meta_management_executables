@@ -280,7 +280,7 @@
     },
     "StaffPlusPlusDiscord": {
         "type": "Spiget",
-        "link": 83871
+        "id": 83871
     },
     "StaffPlusPlusProxy": {
         "type": "Manual",
