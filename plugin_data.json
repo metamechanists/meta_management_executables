@@ -103,6 +103,9 @@
         "type": "Spiget",
         "id": 48732
     },
+    "ExtraHeads": {
+        "type": "Blob"
+    },
     "EcoPower": {
         "type": "Blob"
     },
