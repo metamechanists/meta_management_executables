@@ -28,12 +28,30 @@
         "type": "Spiget",
         "id": 39590
     },
+    "BungeeGuard": {
+        "type": "Spiget",
+        "id": 79601
+    },
+    "BungeeReconnect": {
+        "type": "Manual",
+        "link": "https://gitlab.com/TauCu/bungee-reconnect/-/releases"
+    },
+    "BungeeTabListPlusBukkit": {
+        "type": "Script"
+    },
+    "BungeeTabListPlusProxy": {
+        "type": "Script"
+    },
     "Celeste": {
         "type": "Spiget",
         "id": 81862
     },
     "Citizens": {
         "type": "Script"
+    },
+    "CleanMOTD": {
+        "type": "Spiget",
+        "id": 58268
     },
     "CMI": {
         "type": "Manual",
@@ -147,6 +165,10 @@
         "type": "Spiget",
         "id": 28140
     },
+    "LuckPermsBungee": {
+        "type": "Manual",
+        "link": "https://luckperms.net/download"
+    },
     "MetaArrows": {
         "type": "Internal"
     },
@@ -191,6 +213,10 @@
     },
     "NexEngine": {
         "type": "Script"
+    },
+    "NuVotifier": {
+        "type": "Spiget",
+        "id": 13449
     },
     "OtherAnimalTeleport": {
         "type": "Spiget",
