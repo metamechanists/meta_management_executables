@@ -19,6 +19,8 @@ pub fn update(plugin_data: &HashMap<String, PluginData>, metadata: &MetaData, pl
         "waterfall" => update_waterfall(metadata),
         _ => update_plugin(plugin_data, metadata, &plugin),
     }
+    integrity::integrity(metadata);
+    verify::verify(metadata, plugin_data);
 }
 
 pub fn deploy(plugin_data: &HashMap<String, PluginData>, metadata: &MetaData, plugin: String) {
@@ -26,6 +28,8 @@ pub fn deploy(plugin_data: &HashMap<String, PluginData>, metadata: &MetaData, pl
         "all" => deploy_all(plugin_data, metadata),
         _ => deploy_plugin(plugin_data, metadata, &plugin),
     }
+    integrity::integrity(metadata);
+    verify::verify(metadata, plugin_data);
 }
 
 pub fn list(metadata: &MetaData, plugin: String) {
@@ -36,12 +40,14 @@ pub fn list(metadata: &MetaData, plugin: String) {
     }
 }
 
-pub fn link(metadata: &MetaData, plugin: String, server: String) {
+pub fn link(metadata: &MetaData, plugin_data: &HashMap<String, PluginData>, plugin: String, server: String) {
     match plugin.to_lowercase().as_str() {
         "paper" => link_paper(metadata, server),
         "waterfall" => link_waterfall(metadata, server),
         _ => link_plugin(metadata, plugin, server),
     }
+    integrity::integrity(metadata);
+    verify::verify(metadata, plugin_data);
 }
 
 pub fn unlink(metadata: &MetaData, plugin: String, server: String) {

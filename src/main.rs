@@ -40,7 +40,7 @@ fn main() {
         Commands::Update { plugin } => update(&plugin_data, &metadata, plugin),
         Commands::Deploy { plugin } => deploy(&plugin_data, &metadata, plugin),
         Commands::List { plugin } => list(&metadata, plugin),
-        Commands::Link { plugin, server } => link(&metadata, plugin, server),
+        Commands::Link { plugin, server } => link(&metadata, &plugin_data, plugin, server),
         Commands::Unlink { plugin, server } => unlink(&metadata, plugin, server),
         Commands::Verify => verify(&metadata, &plugin_data),
         Commands::Integrity => integrity(&metadata),
