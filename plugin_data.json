@@ -274,8 +274,7 @@
         "type": "Blob"
     },
     "Squaremap": {
-        "type": "Manual",
-        "link": "https://github.com/jpenilla/squaremap/releases"
+        "type": "Script"
     },
     "SquaremapGriefPrevention": {
         "type": "Manual",
