@@ -143,6 +143,7 @@
         "type": "Manual",
         "link": "https://dev.bukkit.org/projects/grief-prevention/files"
     },
+    
     "Harbour": {
         "type": "Spiget",
         "id": 60088
@@ -183,6 +184,9 @@
         "type": "Internal"
     },
     "MetaEvents": {
+        "type": "Internal"
+    },
+    "MetaGadgets": {
         "type": "Internal"
     },
     "MetaGuide": {
@@ -273,6 +277,10 @@
     "Squaremap": {
         "type": "Manual",
         "link": "https://github.com/jpenilla/squaremap/releases"
+    },
+    "SquaremapGriefPrevention": {
+        "type": "Manual",
+        "link": "https://github.com/jpenilla/squaremap-addons?tab=readme-ov-file"
     },
     "TranscEndence": {
         "type": "Manual",

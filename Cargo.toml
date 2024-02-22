@@ -1,5 +1,5 @@
 [package]
-name = "meta_management_executables"
+name = "exec-manager"
 version = "0.1.0"
 edition = "2021"
 
