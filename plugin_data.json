@@ -173,7 +173,8 @@
         "id": 28140
     },
     "LuckPermsBungee": {
-        "type": "Script"
+        "type": "Manual",
+        "link": "https://luckperms.net/download"
     },
     "MetaArrows": {
         "type": "Internal"
