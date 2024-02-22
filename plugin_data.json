@@ -21,8 +21,7 @@
         "id": 81069
     },
     "BetonQuest": {
-        "type": "Spiget",
-        "id": 2117
+        "type": "Script"
     },
     "BKCommonLib": {
         "type": "Spiget",
