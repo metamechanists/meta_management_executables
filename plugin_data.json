@@ -173,8 +173,7 @@
         "id": 28140
     },
     "LuckPermsBungee": {
-        "type": "Manual",
-        "link": "https://luckperms.net/download"
+        "type": "Script"
     },
     "MetaArrows": {
         "type": "Internal"
@@ -208,7 +207,7 @@
     },
     "MiniBlocks": {
         "type": "Manual",
-        "link": "None"
+        "link": "N/A"
     },
     "MyWorlds": {
         "type": "Spiget",
