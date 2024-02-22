@@ -277,8 +277,7 @@
         "type": "Script"
     },
     "SquaremapGriefPrevention": {
-        "type": "Manual",
-        "link": "https://github.com/jpenilla/squaremap-addons?tab=readme-ov-file"
+        "type": "Script"
     },
     "TranscEndence": {
         "type": "Manual",
