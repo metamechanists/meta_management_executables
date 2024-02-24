@@ -200,6 +200,9 @@
     "MetaRank": {
         "type": "Internal"
     },
+    "MetaPrefixes": {
+        "type": "Internal"
+    },
     "MetaStory": {
         "type": "Internal"
     },
