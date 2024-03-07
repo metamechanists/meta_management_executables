@@ -283,8 +283,7 @@
         "type": "Script"
     },
     "TranscEndence": {
-        "type": "Manual",
-        "link": "N/A"
+        "type": "Blob"
     },
     "Slimefun4": {
         "type": "Blob"
