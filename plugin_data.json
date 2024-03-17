@@ -131,6 +131,9 @@
         "type": "Manual",
         "link": "N/A"
     },
+    "Gastronomicon": {
+        "type": "Blob"
+    },
     "GilderFix": {
         "type": "Internal"
     },
