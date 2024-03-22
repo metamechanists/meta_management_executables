@@ -275,7 +275,7 @@
     },
     "SlimefunServerEssentials": {
         "type": "Manual",
-        "link": "https://github.com/JustAHuman-xD/SlimefunEssentials/releases"
+        "link": "https://github.com/JustAHuman-xD/SlimefunServerEssentials/releases"
     },
     "SlimeHUD": {
         "type": "Blob"
