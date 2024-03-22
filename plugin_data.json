@@ -273,6 +273,10 @@
     "SFCalc": {
         "type": "Blob"
     },
+    "SlimefunServerEssentials": {
+        "type": "Manual",
+        "link": "https://github.com/JustAHuman-xD/SlimefunEssentials/releases"
+    },
     "SlimeHUD": {
         "type": "Blob"
     },
