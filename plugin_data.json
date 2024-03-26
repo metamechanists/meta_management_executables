@@ -128,8 +128,7 @@
         "type": "Internal"
     },
     "Galactifun": {
-        "type": "Manual",
-        "link": "N/A"
+        "type": "Blob"
     },
     "Gastronomicon": {
         "type": "Blob"
