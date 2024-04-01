@@ -181,6 +181,9 @@
     "MetaBuilding": {
         "type": "Internal"
     },
+    "MetaCoin": {
+        "type": "Internal"
+    },
     "MetaEvents": {
         "type": "Internal"
     },
