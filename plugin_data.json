@@ -81,6 +81,10 @@
     "DankTech2": {
         "type": "Internal"
     },
+    "DeluxeMenus": {
+        "type": "Spiget",
+        "id": 11734
+    },
     "DiscordSRV": {
         "type": "Spiget",
         "id": 18494
