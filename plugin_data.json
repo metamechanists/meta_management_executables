@@ -138,8 +138,8 @@
         "type": "Internal"
     },
     "GPFlags": {
-        "type": "Spiget",
-        "id": 55773
+        "type": "Manual",
+        "id": "https://modrinth.com/plugin/gpflags/version/5.12.11"
     },
     "GriefPrevention": {
         "type": "Manual",
