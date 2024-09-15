@@ -16,7 +16,7 @@
     "Aureliumeta": {
         "type": "Internal"
     },
-    "AureliumSkills": {
+    "AuraSkills": {
         "type": "Spiget",
         "id": 81069
     },
@@ -46,7 +46,8 @@
         "id": 81862
     },
     "Citizens": {
-        "type": "Script"
+        "type": "Manual",
+	"link": "https://github.com/kennytv/WorldEditSUI/releases"
     },
     "CleanMOTD": {
         "type": "Spiget",
@@ -73,7 +74,8 @@
         "id": 31331
     },
     "CrystamaeHistoria": {
-        "type": "Blob"
+        "type": "Manual",
+	"link": "https://thebusybiscuit.github.io/builds/Sefiraat/CrystamaeHistoria/master/"
     },
     "DailyRewards": {
         "type": "Internal"
@@ -94,7 +96,8 @@
         "id": 110267
     },
     "DyedBackpacks": {
-        "type": "Blob"
+        "type": "Manual",
+	"link": "https://thebusybiscuit.github.io/builds/TheBusyBiscuit/DyedBackpacks/master/"
     },
     "DynaTech": {
         "type": "Script"
@@ -107,7 +110,8 @@
         "type": "Blob"
     },
     "EcoPower": {
-        "type": "Blob"
+        "type": "Manual",
+	"link": "https://thebusybiscuit.github.io/builds/TheBusyBiscuit/EcoPower/master/"
     },
     "EvenMoreFish": {
         "type": "Spiget",
@@ -138,8 +142,8 @@
         "type": "Internal"
     },
     "GPFlags": {
-        "type": "Spiget",
-        "id": 55773
+        "type": "Manual",
+        "link": "https://modrinth.com/plugin/gpflags/version/5.12.11"
     },
     "GriefPrevention": {
         "type": "Manual",
@@ -158,18 +162,20 @@
         "type": "Internal"
     },
     "InteractiveChat": {
-        "type": "Script"
+        "type": "Manual",
+	"link": "https://ci.loohpjames.com/job/InteractiveChat/"
     },
     "InteractiveChatDiscordSRV": {
-        "type": "Script"
+        "type": "Manual",
+	"link": "https://ci.loohpjames.com/job/InteractiveChat-DiscordSRV-Addon/"
     },
     "ItemEdit": {
         "type": "Spiget",
         "id": 40993
     },
     "LevelledMobs": {
-        "type": "Spiget",
-        "id": 74304
+        "type": "Manual",
+        "link": "https://github.com/ArcanePlugins/LevelledMobs/releases"
     },
     "LuckPerms": {
         "type": "Spiget",
@@ -231,10 +237,15 @@
         "type": "Blob"
     },
     "Netheopoiesis": {
-        "type": "Blob"
+        "type": "Manual",
+	"link": "https://thebusybiscuit.github.io/builds/Sefiraat/Netheopoiesis/master/"
     },
     "NexEngine": {
         "type": "Script"
+    },
+    "NightCore": {
+	"type": "Manual",
+	"link": "https://dev.bukkit.org/projects/pvpmanager/files/5669774"
     },
     "NuVotifier": {
         "type": "Spiget",
@@ -256,8 +267,8 @@
         "type": "Script"
     },
     "PvPManager": {
-        "type": "Spiget",
-        "id": 845
+        "type": "Manual",
+        "link": "https://dev.bukkit.org/projects/pvpmanager/files/5669774"
     },
     "Quaptics": {
         "type": "Blob"
@@ -298,6 +309,9 @@
     "Slimefun4": {
         "type": "Blob"
     },
+    "SlimefunBlockTextures": {
+        "type": "Internal"
+    },
     "SlimeTinker": {
         "type": "Blob"
     },
@@ -333,8 +347,8 @@
         "type": "Blob"
     },
     "WorldEditSUI": {
-        "type": "Spiget",
-        "id": 60726
+        "type": "Manual",
+        "link": "https://github.com/kennytv/WorldEditSUI/releases"
     },
     "WorldGuardExtraFlags": {
         "type": "Spiget",
