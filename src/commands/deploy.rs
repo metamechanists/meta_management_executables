@@ -1,4 +1,4 @@
-use std::{collections::HashMap, fs};
+use std::{collections::HashMap, process::Command};
 
 use crate::{messages, metadata::MetaData, plugin_data::PluginData};
 
@@ -19,7 +19,10 @@ pub fn deploy_plugin(plugin_data: &HashMap<String, PluginData>, metadata: &MetaD
     let jar_file_name = plugin.clone() + ".jar";
     let from = metadata.get_deploy_from_directory() + "/plugins/" + jar_file_name.as_str();
     let to = metadata.get_executables_directory() + "/" + jar_file_name.as_str();
-    if let Err(error) = fs::copy(&from, &to) {
+    if let Err(error) = Command::new("cp")
+            .arg(&from)
+            .arg(&to)
+            .output() {
         panic!("{}", messages::failed_to_copy_jar(&from, &to, error));
     }
 
