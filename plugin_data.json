@@ -281,6 +281,9 @@
         "type": "Spiget",
         "id": 83581
     },
+    "SaneCrafting": {
+        "type": "Blob"
+    },
     "SFCalc": {
         "type": "Blob"
     },
